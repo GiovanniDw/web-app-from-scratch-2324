@@ -5,6 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  gsap:
+    specifier: ^3.12.5
+    version: 3.12.5
+  stateman:
+    specifier: 0.3.0-beta.2
+    version: 0.3.0-beta.2
+  vanilla-router:
+    specifier: ^1.2.8
+    version: 1.2.8
   vite:
     specifier: ^5.1.4
     version: 5.1.4
@@ -365,6 +374,10 @@ packages:
     dev: true
     optional: true
 
+  /gsap@3.12.5:
+    resolution: {integrity: sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ==}
+    dev: true
+
   /nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -410,6 +423,14 @@ packages:
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /stateman@0.3.0-beta.2:
+    resolution: {integrity: sha512-ZXXyxrS7gDN9c6dTZ1gMpG0UXyOoz8WAEUpPdzKTUkRhuI4tpMt1Fn25hAvEw+BB+qfWB+8XCZoKOucTNJCrrQ==}
+    dev: true
+
+  /vanilla-router@1.2.8:
+    resolution: {integrity: sha512-jZYhHPTXVqsUr4nfSD776q2eWeKNphBgvh7ELyGgcgZPo2bjUgV4BdW0l0fHX+cNZHDpW8WabQ8ZdIHc73Cd7w==}
     dev: true
 
   /vite@5.1.4:
