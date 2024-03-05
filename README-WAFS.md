@@ -19,17 +19,18 @@ frameworks en de werking van het web.
 
 ---
 
-## Criteria
+## Program
 
-- [x] Gerealiseerd met ‘nette’ vanilla HTML, CSS en Javascript,
-- [] Diverse content,
-- [ ] Minimaal één tot in detail uitgewerkte micro-interactie,
-- [ ] Minimaal één data-connectie (API call),
-- [ ] Bevat de juiste data voor integratie met de team app,
-- [ ] Toegankelijk,
-- [ ] Professionele vormgeving (en styling),
-- [ ] Volledig responsive,
-- [ ] Gedocumenteerd
+| Planning | Maandag               | Dinsdag                | Woensdag                           | Donderdag                   | Vrijdag                                   |
+|----------|-----------------------|------------------------|------------------------------------|-----------------------------|-------------------------------------------|
+|          | Kick-Off, Dev WebSite | Dev TeamApp, Workshops | Dev *, Weekly nerd                 | Dev *, Workshops            | Code review, Voortgangsgesprekken, Dev *  |
+|          | Dev *, Workshops      | College + Workshops    | Dev *, Weekly nerd, Deadline 23:59 | Mondeling, Weekly Nerd Blog | Reparatiegesprekken, Afsluiting, 🍻 Fest? |
+
+
+[Kick-off presentatie](./course/WAFS-1.Kick-off.pdf)
+[JavaScript presentatie](./course/WAFS-2.Javascript.pdf)
+[presentatie UI stack](./course/WAFS-3.UI-stack.pdf)
+
 
 
 ## Beoordeling
@@ -99,3 +100,35 @@ voorzien, etc.
 - __Indien niet aan basisvoorwaarden voldoen => 1 (deel 2 is niet relevant)__
 
 ## Teams
+
+| Team              | Thema         | Leden                                   | Data                                                |
+|-------------------|---------------|-----------------------------------------|-----------------------------------------------------|
+| Eendjes           | Eendjes       | Kevin, Quinten, Justin, Lars            | Alles is eenden gerelateerd, favo vijver            |
+|                   | Koken         | Katarina, Raul, Lisa, Jurien            | 2 leugens - 1 waarheid, skills, ontbijt, schermtijd |
+| Deck of devs      | Playing cards | Niels, Ali, Ufuk, Sena                  | Avatar, About me, Socials, Spotify solo & team      |
+| Number Ones       | Games         | Brianne, Elaine, Rose, Ruud             | Favo games, genre, biome                            |
+|                   | Pokemon       | Eva, Manoah, Nesli, Laura, Yeliz        | Skills, zwaktes, favo pokemon                       |
+|                   | Reizen        | Joppe, Eefje, Jop, Lynn                 | Recepten                                            |
+|                   | Huisdieren    | Stephan, Nicole, Stef, Mitchel          | Eigen huisdier, favo dieren                         |
+|                   | Muziek        | Karenza, Xiao Nan, Max, Hidde           | Emojis, top genres, top artiesten                   |
+| Heroes & Villains | Films         | Tristan, Bart, Ferhat, Klaudia, Martijn | Favo films, favo acteurs, genres, karakters         |
+
+<!-- Add a link to your live demo in Github Pages 🌐-->
+
+<!-- ☝️ replace this description with a description of your own work -->
+
+<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
+
+<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
+
+<!-- Maybe a table of contents here? 📚 -->
+
+<!-- How about a section that describes how to install this project? 🤓 -->
+
+<!-- ...but how does one use this project? What are its features 🤔 -->
+
+<!-- What external data source is featured in your project and what are its properties 🌠 -->
+
+<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
+
+<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
