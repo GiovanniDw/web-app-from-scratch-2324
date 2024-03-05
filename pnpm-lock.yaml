@@ -15,8 +15,8 @@ devDependencies:
     specifier: ^1.2.8
     version: 1.2.8
   vite:
-    specifier: ^5.1.4
-    version: 5.1.4
+    specifier: ^5.1.5
+    version: 5.1.5
 
 packages:
 
@@ -433,8 +433,8 @@ packages:
     resolution: {integrity: sha512-jZYhHPTXVqsUr4nfSD776q2eWeKNphBgvh7ELyGgcgZPo2bjUgV4BdW0l0fHX+cNZHDpW8WabQ8ZdIHc73Cd7w==}
     dev: true
 
-  /vite@5.1.4:
-    resolution: {integrity: sha512-n+MPqzq+d9nMVTKyewqw6kSt+R3CkvF9QAKY8obiQn8g1fwTscKxyfaYnC632HtBXAQGc1Yjomphwn1dtwGAHg==}
+  /vite@5.1.5:
+    resolution: {integrity: sha512-BdN1xh0Of/oQafhU+FvopafUp6WaYenLU/NFoL5WyJL++GxkNfieKzBhM24H3HVsPQrlAqB7iJYTHabzaRed5Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
