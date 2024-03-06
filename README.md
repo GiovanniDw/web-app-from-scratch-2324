@@ -22,10 +22,10 @@ frameworks en de werking van het web.
 ## Criteria
 
 - [x] Gerealiseerd met ‘nette’ vanilla HTML, CSS en Javascript,
-- [] Diverse content,
+- [ ] Diverse content,
 - [ ] Minimaal één tot in detail uitgewerkte micro-interactie,
 - [ ] Minimaal één data-connectie (API call),
-- [ ] Bevat de juiste data voor integratie met de team app,
+- [x] Bevat de juiste data voor integratie met de team app,
 - [ ] Toegankelijk,
 - [ ] Professionele vormgeving (en styling),
 - [ ] Volledig responsive,
