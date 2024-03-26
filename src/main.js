@@ -1,30 +1,23 @@
-import {getStudents} from './scripts/getStudents.js';
+import {Header} from './components/Header.js';
+import { getStudents } from './scripts/getStudents.js';
+import {renderStudents} from './components/StudentsSection.js';
 
 
-main().then(() => console.log('done'))
 
-async function main() {
-    const students = await getStudents();
-    renderStudents(students.sort(() => 0.5 - Math.random()))
+const main = async () => {
+    try {
+        await Header()
+        const students = await getStudents();
+        renderStudents(students.sort(() => 0.5 - Math.random()))
+    }
+    catch {
+        console.log('error')
+    } 
+    finally {
+        console.log('done')
+    }
+    
 }
 
-function renderStudents(students) {
-    const container = document.querySelector('[data-students]');
-    const list = document.createElement('ul')
 
-    students.map(student => {
-        const item = document.createElement('li')
-        const anchor = document.createElement('a');
-        const description = document.createElement('p')
-        const avatar = document.createElement('img')
-        anchor.href = `https://${student.login}.github.io/web-app-from-scratch-2324/`
-        anchor.alt = `WAFS fork from ${student.login}`
-        anchor.target = '_blank'
-        anchor.textContent = student.login
-        avatar.src = student.avatar_url
-        item.append(avatar)
-        item.append(anchor)
-        list.append(item)
-    })
-    container.append(list)
-}
+main()
