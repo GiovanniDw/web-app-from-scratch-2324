@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  web-app-from-scratch:
+    specifier: 'link:'
+    version: 'link:'
+
 devDependencies:
   gsap:
     specifier: ^3.12.5

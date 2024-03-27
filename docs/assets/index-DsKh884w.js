@@ -39,20 +39,35 @@
     fetch(link.href, fetchOpts);
   }
 })();
+const app = document.querySelector("#app");
+const Header = async () => {
+  try {
+    const nav = document.createElement("nav");
+    nav.innerHTML = `
+    <div class="nav-container">
+  <div>
+    <img class="p-avatar"   />
+  </div>
+  <div class="toggle-mode" >
+
+  </div>
+  </div>
+  `;
+    app.append(nav);
+  } catch (error) {
+    console.log(error);
+  }
+};
 async function getStudents() {
   const res = await fetch("https://api.github.com/repos/cmda-minor-web/web-app-from-scratch-2324/forks?per_page=100");
   const teams = await res.json();
   console.log(teams);
   return teams.map(({ owner }) => owner);
 }
-main().then(() => console.log("done"));
-async function main() {
-  const students = await getStudents();
-  renderStudents(students.sort(() => 0.5 - Math.random()));
-}
 function renderStudents(students) {
-  const container = document.querySelector("[data-students]");
+  const container = document.createElement("section");
   const list = document.createElement("ul");
+  list.classList.add("student-list");
   students.map((student) => {
     const item = document.createElement("li");
     const anchor = document.createElement("a");
@@ -61,12 +76,31 @@ function renderStudents(students) {
     anchor.href = `https://${student.login}.github.io/web-app-from-scratch-2324/`;
     anchor.alt = `WAFS fork from ${student.login}`;
     anchor.target = "_blank";
-    anchor.textContent = student.login;
+    anchor.textContent = `@${student.login}`;
+    anchor.classList.add("link-student");
+    anchor.target = "_blank";
     avatar.src = student.avatar_url;
+    avatar.classList.add("avatar");
     item.append(avatar);
     item.append(anchor);
     list.append(item);
   });
+  app.append(container);
+  const heading = document.createElement("h2");
+  heading.innerText = "Students";
+  container.append(heading);
   container.append(list);
 }
-//# sourceMappingURL=index-DCBnJNnY.js.map
+const main = async () => {
+  try {
+    await Header();
+    const students = await getStudents();
+    renderStudents(students.sort(() => 0.5 - Math.random()));
+  } catch {
+    console.log("error");
+  } finally {
+    console.log("done");
+  }
+};
+main();
+//# sourceMappingURL=index-DsKh884w.js.map
