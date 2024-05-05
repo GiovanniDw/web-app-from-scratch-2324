@@ -40,30 +40,45 @@
   }
 })();
 const app = document.querySelector("#app");
+const getStudents = async () => {
+  try {
+    const res = await fetch(
+      "https://api.github.com/repos/cmda-minor-web/web-app-from-scratch-2324/forks?per_page=100"
+    );
+    const teams = await res.json();
+    return teams.map(({ owner }) => owner);
+  } catch (error) {
+    console.log(error);
+  }
+};
+const getMyData = async () => {
+  try {
+    const res = await fetch(
+      "https://giovannidw.github.io/web-app-from-scratch-2324/info.json"
+    );
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};
 const Header = async () => {
   try {
+    const user = await getMyData();
     const nav = document.createElement("nav");
     nav.innerHTML = `
-    <div class="nav-container">
-  <div>
-    <img class="p-avatar"   />
-  </div>
-  <div class="toggle-mode" >
-
-  </div>
-  </div>
+      <div class="nav-container">
+        <div>
+          <img class="p-avatar" src="${user.avatar_url}" />
+        </div>
+        <div class="toggle-mode"></div>
+      </div>
   `;
     app.append(nav);
   } catch (error) {
     console.log(error);
   }
 };
-async function getStudents() {
-  const res = await fetch("https://api.github.com/repos/cmda-minor-web/web-app-from-scratch-2324/forks?per_page=100");
-  const teams = await res.json();
-  console.log(teams);
-  return teams.map(({ owner }) => owner);
-}
 function renderStudents(students) {
   const container = document.createElement("section");
   const list = document.createElement("ul");
@@ -103,4 +118,4 @@ const main = async () => {
   }
 };
 main();
-//# sourceMappingURL=index-DsKh884w.js.map
+//# sourceMappingURL=index-2wrf4tf6.js.map

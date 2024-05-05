@@ -1,53 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 
-/* source: https://github.com/Lazzzer00/Best-CSS-Reset-2024/blob/main/css_reset.css */*, *::before, *::after{
+/* source: https://github.com/Lazzzer00/Best-CSS-Reset-2024/blob/main/css_reset.css */*,
+*::before,
+*::after {
   box-sizing: border-box; /* Set the sizing of an element to include it's border */
-}*{
+}* {
   margin: 0; /* Set the default margin to 0 */
   padding: 0; /* Set the default padding to 0 */
-}ul[role='list'], ol[role='list']{
+}ul[role="list"],
+ol[role="list"] {
   list-style: none; /* Turn off numbered and unordered list decoration */
-}html:focus-within{
+}html:focus-within {
   scroll-behavior: smooth; /* Make the scrolling inside of any scrollable element smooth */
-}a:not([class]){
+}a:not([class]) {
   text-decoration-skip-ink: auto; /* Makes link undelines look better */
-}img, picture, svg, video, canvas{
+}img,
+picture,
+svg,
+video,
+canvas {
   max-width: 100%; /* Makes it responsive */
   height: auto; /* Makes it responsive */
   vertical-align: middle; /* Makes text next to inline images look better */
   font-style: italic; /* If the images don't load it makes the alt decription look better */
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   /* The background repeat and size are there if you want to load a picture first like a backroung image that is worse quality while the better quality image loads */
   background-size: cover;
-}input, button, textarea, select{
+}input,
+button,
+textarea,
+select {
   font: inherit; /* Makes these elements inherit fonts */
-}/* Turns off animation for people who don't want to see them */@media (prefers-reduced-motion: reduce){
+}/* Turns off animation for people who don't want to see them */@media (prefers-reduced-motion: reduce) {
   html:focus-within {
-      scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  *, *::before, *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-      transition: none;
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
   }
-}body, html{
+}body,
+html {
   height: 100%; /* Makes the body element full screen */
   scroll-behavior: smooth; /* Makes normal scrolling smooth */
 }:root {
-  
   --c-blue: #005eff;
   --c-black: #212121;
 
   --c-primary: #212121;
-  
+
   --c-accent: var(--c-blue);
 
-
   --c-text: #005eff;
-
-
 }body {
   font-family: "Roboto Serif", serif;
   font-optical-sizing: auto;
@@ -56,23 +65,27 @@
   font-variation-settings:
     "wdth" 100,
     "GRAD" -50;
-}h1, h2, h3, h4, h5, h6 {
+}h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   font-variation-settings:
     "wdth" 100,
     "GRAD" 100;
-}section{ 
+}section {
   padding: 1em;
 }ul.student-list {
   margin-left: 0;
-  max-width: 100%; 
+  max-width: 100%;
   height: 100%;
   display: flex;
   overflow: visible;
   padding-block: 2em;
-
 }ul.student-list li {
   list-style: none;
   display: flex;
@@ -88,7 +101,7 @@
   position: absolute;
   bottom: -2em;
 }ul.student-list li:hover .link-student {
-opacity: 1;
+  opacity: 1;
 }.avatar {
   overflow: hidden;
   border-radius: 100%;
@@ -100,12 +113,12 @@ opacity: 1;
   background: #000;
   padding: 1em;
 }.p-avatar {
-  border-radius:100%;
+  border-radius: 100%;
   background: gray;
   width: 2em;
   height: 2em;
 }.nav-container {
   border-radius: 4em;
   border: 1px solid red;
-  padding: .5em;
+  padding: 0.5em;
 }

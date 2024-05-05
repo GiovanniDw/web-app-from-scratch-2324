@@ -4,8 +4,16 @@
   "avatar_url": "https://1.gravatar.com/avatar/1d2406fedab896947dfdf58f69c947217067c3f36fb41b88de6918433034dcb6?size=512",
   "age": 27,
   "city": "HeadVillage",
-  "hobbies" : ["Watching Movies & Series", "Listen to Music", "PLay video Games"],
-  "truthsAndLies" : ["Ik ben blind", "Koriander is lekker", "Ik ben te lang bezig met mijn opleiding"],
-  "bio" : "(optioneel)",
-  "favouriteAnimal" : "(optioneel)"
+  "hobbies": [
+    "Watching Movies & Series",
+    "Listen to Music",
+    "PLay video Games"
+  ],
+  "truthsAndLies": [
+    "Ik ben blind",
+    "Koriander is lekker",
+    "Ik ben te lang bezig met mijn opleiding"
+  ],
+  "bio": "(optioneel)",
+  "favouriteAnimal": "(optioneel)"
 }
