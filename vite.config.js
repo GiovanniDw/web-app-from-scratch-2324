@@ -15,7 +15,7 @@ const __dirname = path.dirname(__filename);
 
 
 export default defineConfig({
-  base: "/",
+  base: "/web-app-from-scratch-2324/",
   server: {
     port: 3000,
   },
