@@ -1,6 +1,6 @@
-import {Header} from './components/Header.js';
-import { getStudents } from './scripts/getStudents.js';
-import {renderStudents} from './components/StudentsSection.js';
+import {Header} from '~/components/Header.js';
+import { getStudents } from '~/utils/data.js';
+import {renderStudents} from '~/components/StudentsSection.js';
 
 
 

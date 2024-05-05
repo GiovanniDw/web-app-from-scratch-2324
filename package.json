@@ -16,6 +16,6 @@
     "gsap": "^3.12.5",
     "stateman": "0.3.0-beta.2",
     "vanilla-router": "^1.2.8",
-    "vite": "^5.1.5"
+    "vite": "^5.2.11"
   }
 }
