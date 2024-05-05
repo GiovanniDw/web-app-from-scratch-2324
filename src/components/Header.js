@@ -1,12 +1,11 @@
-import { $, $$, app } from '~/utils/variables.js';
-import {getMyData} from '~/utils/data.js';
+import { $, $$, app } from "~/utils/variables.js";
+import { getMyData } from "~/utils/data.js";
 // import data from '/data.json';
-
 
 export const Header = async () => {
   try {
     const user = await getMyData();
-    const nav = document.createElement('nav');
+    const nav = document.createElement("nav");
 
     nav.innerHTML = `
       <div class="nav-container">

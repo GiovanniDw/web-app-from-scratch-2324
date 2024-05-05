@@ -1,8 +1,6 @@
-import { socket } from '@/socket.js';
+import { socket } from "@/socket.js";
 const observers = new Set();
-let state = {
-
-}; // Initialize state object
+let state = {}; // Initialize state object
 
 export function getState() {
   // if (Object.keys(state).length === 0 && sessionStorage.getItem('myState')) {
@@ -14,7 +12,7 @@ export function getState() {
 export function setState(newState) {
   // let sessionState = JSON.parse(localStorage.getItem("state"));
   // console.log(sessionState);
-  
+
   state = { ...state, ...newState };
   // sessionStorage.setItem('myState', JSON.stringify(state));
   notifyObservers(); // Merge new state with existing state
