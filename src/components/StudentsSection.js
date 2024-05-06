@@ -1,4 +1,4 @@
-import { $, $$, app } from "../utils/variables.js";
+import { $, $$, app } from "~/utils/variables.js";
 
 export function renderStudents(students) {
   // const container = $('[data-students]');

@@ -1,4 +1,3 @@
-import { socket } from "@/socket.js";
 const observers = new Set();
 let state = {}; // Initialize state object
 
@@ -30,4 +29,12 @@ function notifyObservers() {
   for (const observer of observers) {
     observer(state);
   }
+}
+
+
+export const initialRender = () => {
+  return /*html*/ `
+<header-component></header-component>
+<bento-grid></bento-grid>
+`
 }
